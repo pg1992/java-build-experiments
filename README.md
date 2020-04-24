@@ -36,3 +36,6 @@ ant compile
 ant jar
 ant run
 ```
+
+O legal do `ant` é que ele já entende que o `sourcepath` está cheio de código-fonte
+para compilar e faz isso automaticamente sem precisar especificar cada arquivo um-por-um.
