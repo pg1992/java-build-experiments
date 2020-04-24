@@ -1,6 +1,6 @@
 # Experimentos com Java (build)
 
-## Usando um shell script
+## Usando um script shell
 
 Para compilar a classe temos que especificar o `sourcepath` e o caminho de destino:
 
@@ -17,3 +17,9 @@ mkdir -p build/jar
 echo Main-Class: br.eng.espectro.Main>MANIFEST.in
 jar cfm build/jar/Main.jar MANIFEST.in -C build/classes .
 ```
+
+## Usando `make`
+
+Se você quiser ser mais esperto e só construir os artefatos que tiverem
+suas dependências alteradas desde o último build, então é melhor criar
+um `Makefile` e executar `make`.
