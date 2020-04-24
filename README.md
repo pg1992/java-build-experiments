@@ -1,6 +1,6 @@
 # Experimentos com Java (build)
 
-## Usando um script shell
+## Usando um script shell ([build.sh](/build.sh))
 
 Para compilar a classe temos que especificar o `sourcepath` e o caminho de destino:
 
@@ -18,13 +18,13 @@ echo Main-Class: br.eng.espectro.Main>MANIFEST.in
 jar cfm build/jar/Main.jar MANIFEST.in -C build/classes .
 ```
 
-## Usando `make`
+## Usando `make` ([Makefile](/Makefile))
 
 Se você quiser ser mais esperto e só construir os artefatos que tiverem
 suas dependências alteradas desde o último build, então é melhor criar
 um `Makefile` e executar `make`.
 
-## Usando `ant`
+## Usando `ant` ([build.xml](/build.xml))
 
 A ferramenta `ant` da Apache é uma "evolução" do `make`, mas voltado
 para Java.  Seguindo [este tutorial](https://ant.apache.org/manual/tutorial-HelloWorldWithAnt.html)
